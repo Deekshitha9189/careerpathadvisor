@@ -1,68 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dashboard - CareerPathAdvisor</title>
+  <title>Career Streams – CareerPathAdvisor</title>
   <link rel="stylesheet" href="style/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      color: #2c3e50;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #ffffffdd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .stream-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .stream-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      padding: 25px;
+      transition: transform 0.3s ease;
+    }
+
+    .stream-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .stream-card h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      color: #2980b9;
+    }
+
+    .stream-card p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffffffdd;
+      font-size: 14px;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.05);
+    }
+  </style>
 </head>
-<body class="dashboard-body">
+<body>
   <header>
-    <h2>Career Dashboard</h2>
-    <p>Explore your career opportunities by region</p>
+    <h2>Career Streams</h2>
+    <p>Choose your stream and explore opportunities</p>
   </header>
 
-  <section class="card-container">
-    <!-- Existing Cards -->
-    <div class="card">
-      <h3>Developer – UK</h3>
-      <p>Accenture</p>
-      <p>Role: Full Stack Developer</p>
+  <section class="stream-container">
+    <div class="stream-card">
+      <h3>AI & Machine Learning</h3>
+      <p>Company: Accenture – Australia</p>
+      <p>Role: AI/ML Developer</p>
       <p>Type: Internship/FTE</p>
     </div>
 
-    <div class="card">
-      <h3>Technology Analyst – Nordics</h3>
-      <p>Accenture</p>
-      <p>Cloud/Data Role</p>
-    </div>
-
-    <div class="card">
-      <h3>Developer – Australia</h3>
-      <p>Accenture</p>
-      <p>AI/ML & App Dev Roles</p>
-    </div>
-
-    <!-- New Stream Cards -->
-    <div class="card">
-      <h3>AI/ML Specialist – USA</h3>
-      <p>Google</p>
-      <p>Role: AI Research Intern</p>
+    <div class="stream-card">
+      <h3>Cybersecurity</h3>
+      <p>Company: Deloitte – UK</p>
+      <p>Role: Cybersecurity Analyst</p>
       <p>Type: Internship</p>
     </div>
 
-    <div class="card">
-      <h3>Cybersecurity Analyst – Germany</h3>
-      <p>Deloitte</p>
-      <p>Role: SOC Intern</p>
-      <p>Type: Internship/FTE</p>
+    <div class="stream-card">
+      <h3>Data Analytics</h3>
+      <p>Company: PwC – Nordics</p>
+      <p>Role: Data Analyst</p>
+      <p>Type: Full-Time</p>
     </div>
 
-    <div class="card">
-      <h3>Data Analyst – Canada</h3>
-      <p>Amazon</p>
-      <p>Role: Data Visualization Intern</p>
+    <div class="stream-card">
+      <h3>Business Consulting</h3>
+      <p>Company: Accenture – UK</p>
+      <p>Role: Strategy Analyst</p>
       <p>Type: Internship</p>
     </div>
 
-    <div class="card">
-      <h3>Business Analyst – India</h3>
-      <p>Microsoft</p>
-      <p>Role: Product Strategy Intern</p>
-      <p>Type: Internship/FTE</p>
+    <div class="stream-card">
+      <h3>App Development</h3>
+      <p>Company: Accenture – Australia</p>
+      <p>Role: Mobile/Web Developer</p>
+      <p>Type: FTE</p>
+    </div>
+
+    <div class="stream-card">
+      <h3>Cloud Computing</h3>
+      <p>Company: TCS – Global</p>
+      <p>Role: Cloud Engineer</p>
+      <p>Type: Full-Time</p>
     </div>
   </section>
 
   <footer>
-    <p>Made by Deekshitha | CareerPathAdvisor © 2025</p>
+    Made by Deekshitha | CareerPathAdvisor © 2025
   </footer>
 </body>
 </html>
